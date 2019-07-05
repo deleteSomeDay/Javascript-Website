@@ -11,7 +11,7 @@ const LandingCarousel = () =>
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img className="d-block w-100" src='/static/img/tutor.jpg' alt="First slide"></img>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block">
                         <h5>HelloWorld</h5>
                         <p>...</p>
                     </div>
