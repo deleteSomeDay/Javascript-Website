@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import React from 'react'
-import fetch from 'isomorphic-fetch'
 
 const Picture = styled.img`
 border-radius: 50%;
@@ -8,31 +7,8 @@ border: 3px solid white;
 width: 100px;
 `;
 
-
-class Profile extends React.Component {
-  static async getInitialProps({user})
-  {
-  
-    var fuser = '/api/v2/users/'
-    fuser += user.id
-      fetch(fuser)
-      .then( response => {
-        console.log(response)
-      })
-  }
-
-  constructor()
-  {
-    super(props)
-    this.state = {
-      user: props.pageProps.user
-    };
-  }
-
-  render() 
-  {
-    return 
-    (
+const Profile = ({user}) => 
+(
       <div>
        
         <h2>
@@ -46,10 +22,8 @@ class Profile extends React.Component {
           ))}
         </ul>
         
-      </div>
-    );
-  }
+      </div>   
   
-}
+);
 
-  export default Profile;
+export default Profile;

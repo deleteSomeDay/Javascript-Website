@@ -8,15 +8,41 @@ import Navbar from "../components/Navbar";
 import fetch from 'isomorphic-fetch'
 
 class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
+  static async getInitialProps({ Component, ctx }) 
+  {
+    
     let pageProps = {};
-    if (Component.getInitialProps) {
+    if (Component.getInitialProps) 
+    {
       pageProps = await Component.getInitialProps(ctx);
     }
-    if (ctx.req && ctx.req.session.passport) {
+    if (ctx.req && ctx.req.session.passport)
+    {
       pageProps.user = ctx.req.session.passport.user;
+
+      var bearer = 'Bearer ' + pageProps.user
+      var fuser = 'https://login.auth0.com/api/v2/users/'
+      fuser += pageProps.user.user_id
+        fetch(fuser, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': bearer
+          },
+          credentials: "same-origin"
+        })
+        .then( response => {
+          if(response.status >= 400)
+          {
+            throw new Error('Bad Response from server: ' + response.status)
+          }
+          console.log(response)
+          pageProps.user = response.json();
+        })
+        
     }
     return { pageProps };
+  
   }
 
   constructor(props) {

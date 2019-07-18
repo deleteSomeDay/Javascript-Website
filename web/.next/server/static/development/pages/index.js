@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,7 +104,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "D:\\dev\\TutorFinal\\web\\components\\LandingCarousel.js";
+var _jsxFileName = "/home/aidan/Dev/Tutor/web/components/LandingCarousel.js";
 
 
 var LandingCarousel = function LandingCarousel() {
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_LandingCarousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/LandingCarousel */ "./components/LandingCarousel.js");
-var _jsxFileName = "D:\\dev\\TutorFinal\\web\\pages\\index.js";
+var _jsxFileName = "/home/aidan/Dev/Tutor/web/pages/index.js";
 
 
 
@@ -396,14 +396,14 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\dev\TutorFinal\web\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/aidan/Dev/Tutor/web/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
