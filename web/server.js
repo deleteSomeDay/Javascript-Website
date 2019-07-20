@@ -42,6 +42,7 @@ app.prepare().then(() => {
       callbackURL: process.env.AUTH0_CALLBACK_URL
     },
     function(accessToken, refreshToken, extraParams, profile, done) {
+      profile.accessToken=accessToken;
       return done(null, profile);
     }
   );
@@ -66,6 +67,7 @@ app.prepare().then(() => {
   server.use(tutorAPI);
   server.use("/profile", restrictAccess);
   server.use("/find-tutor", restrictAccess);
+  server.use("/profile_edit", restrictAccess);
 
   // handling everything else with Next.js
   server.get("*", handle);
