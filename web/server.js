@@ -10,6 +10,7 @@ const uid = require('uid-safe');
 const authRoutes = require("./auth-routes");
 const tutorAPI = require("./find-tutor-api")
 const managementAPI = require('./auth-api')
+const braintreeRoutes = require('./braintree-routes')
 
 
 const dev = process.env.NODE_ENV !== "production";
@@ -56,7 +57,7 @@ app.prepare().then(() => {
   server.use(passport.initialize());
   server.use(passport.session());
   server.use(authRoutes);
-  
+  server.use(braintreeRoutes);
 
   // 6 - you are restricting access to some routes
   const restrictAccess = (req, res, next) => {
