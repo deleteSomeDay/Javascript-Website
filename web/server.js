@@ -12,7 +12,6 @@ const tutorAPI = require("./find-tutor-api")
 const managementAPI = require('./auth-api')
 const braintreeRoutes = require('./braintree-routes')
 
-
 const dev = process.env.NODE_ENV !== "production";
 const app = next({
   dev,

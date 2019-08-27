@@ -1,3 +1,4 @@
+import Button from '@material-ui/core/Button';
 
 const LandingCarousel = () =>
 (
@@ -12,15 +13,15 @@ const LandingCarousel = () =>
                 <div className="carousel-item active">
                     <img className="d-block w-100" src='/static/img/tutor.jpg' alt="First slide"></img>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>HelloWorld</h5>
-                        <p>...</p>
+                        <h5>Sign up for our Newsletter to get Updates on Development!</h5>
+                        <p>EcommShare is a site that aims to connect Ecommerce entrepreneurs everywhere in order to facilitate product sharing and collaboration.</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img className="d-block w-100" src='static/img/tutor1.jpg' alt="Second slide"></img>
                     <div className="carousel-caption d-none d-md-block">
-                        <h5>...</h5>
-                        <p>...</p>
+                        <h5>Our Planned Supported Platforms</h5>
+                        <p></p>
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -40,13 +41,8 @@ const LandingCarousel = () =>
                 <span className="sr-only">Next</span>
             </a>
         </div>
-        <div id="dropdown-front" className="dropdown" >
-            <button className="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Find Your Tutor
-            <span className="caret"></span></button>
-            <ul className="dropdown-menu">
-            </ul>
-        </div>
-    </div>
+    <Button>Start Now for Free!</Button>
+</div>
 );
 
 export default LandingCarousel;

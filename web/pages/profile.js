@@ -1,40 +1,37 @@
-import styled from "styled-components";
 import React from 'react'
 import Link from 'next/link'
+import Avatar from '@material-ui/core/Avatar'
+import { makeStyles, styled } from '@material-ui/core/styles';
 
-const Picture = styled.img`
-border-radius: 50%;
-border: 3px solid white;
-width: 100px;
-`;
+const BigAvatar = styled(Avatar)({
+    margin: 10,
+    width: 60,
+    height: 1000,
+});
 
-class Profile extends React.Component
-{
+class Profile extends React.Component {
+  
   render()
   {
       return(
       <div>
-        <div className="alert alert-success" role="alert">
-          <Link href='/tutor_signup'>
-          <a>Sign up to be a Tutor Today! Click on this link to apply</a>
-          </Link>
-        </div>
         {!this.props.user.email_verified && (<div className="alert alert-warning" role="alert">
          You haven't verified your account <Link href='/send_verify'><a>press this link to receive your verification email</a></Link>
         </div> )}
         
         
         <h2>
-          <Picture src={this.props.user.picture} alt={this.props.user.displayName} /> Hello, {this.props.user.displayName}
+          <BigAvatar src={this.props.user.picture} alt={this.props.user.displayName} /> Hello, {this.props.user.given_name} {this.props.user.family_name}
         </h2>
         <Link href="/profile_edit">
-          <input type='button' value='Edit profile'  />
+          <input className="btn btn-dark" type='button' value='Edit profile'  />
         </Link>
         <p>This is what we know about you:</p>
         <ul>
-          { Object.keys(this.props.user).map(key => (
-            <li key={key}>{key}: {this.props.user[key].toString()}</li>
-          ))}
+            <li>First Name: {this.props.user.given_name}</li>
+            <li>Last Name: {this.props.user.family_name}</li>
+            <li>Email: {this.props.user.email}</li>
+            <li>Description: {this.props.user.user_metadata}</li>
         </ul>
         
       </div>   
