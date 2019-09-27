@@ -151,7 +151,7 @@ class ProfileEdit extends React.Component {
                             <label className="form-check-label" for="exampleCheck1">Sign up for our Newsletter and receive updates and deals</label>
                         </div>
 
-                        <input className="btn btn-dark" type='submit' value='Save Changes' />
+                        <input className="btn btn-secondary" type='submit' value='Save Changes' />
                     </form>
             </div>
 

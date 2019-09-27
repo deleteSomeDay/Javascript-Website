@@ -24,13 +24,6 @@ const Navbar = ({ user }) =>
 
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav mr-auto">
-
-          <li className="nav-item">
-            <Link href=''><a className="nav-link">Features</a></Link>
-          </li>
-          <li className="nav-item">
-            <Link href=""><a className="nav-link" >Pricing</a></Link>
-          </li>
           <li className="nav-item">
             <Link href='/about'><a className="nav-link">About</a></Link>
           </li>

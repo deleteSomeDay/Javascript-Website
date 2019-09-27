@@ -14,6 +14,7 @@ const useStyles = makeStyles(theme => ({
             paddingTop: theme.spacing(6),
             paddingBottom: theme.spacing(6),
         },
+        flexShrink: 0
     },
 }));
 
@@ -37,8 +38,10 @@ const footers = [
 ];
 
 const Footer = () =>
-    (
-        <div className='bg-primary'>
+    {
+        const classes = useStyles();
+        return(
+        <div className={classes.footer}>
             <Container>
                 <Grid container spacing={4} justify="space-evenly">
                     {footers.map(footer => (
@@ -60,6 +63,7 @@ const Footer = () =>
                 </Grid>
             </Container>
         </div>
-    );
+        )
+    };
 
 export default Footer
