@@ -27,7 +27,8 @@ const Navbar = ({ user }) =>
           <li className="nav-item">
             <Link href='/about'><a className="nav-link">About</a></Link>
           </li>
-          
+          <li className="nav-item">
+          </li>
           {user && (
             <>
              <Button className="nav-item nav-link" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>

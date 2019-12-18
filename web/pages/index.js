@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container'
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import { Form, Media } from 'reactstrap';
+import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -67,6 +68,9 @@ const Index = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="row">
+                            <Button>Learn More</Button>
+                        </div>
 
 
 
@@ -76,32 +80,21 @@ const Index = () => {
                         <h2>Signup for Our Newsletter!</h2>
                     </Paper>
                 </Grid>
-                <Grid item xs={3}>
-                    <Paper>
-                        <h2>Cross Promote Products</h2>
-                        <img className={classes.headImage} src="/static/img/handshake.png" alt="Generic placeholder image" />
-                        <p>
-                            Use your platform's search and messaging to find similar Ecommerce sites to partner with on social media.
-                </p>
-                    </Paper>
-                </Grid>
-                <Grid item xs={3}>
-                    <Paper>
-                        <h2>Share Products</h2>
+                <Grid item xs={12}>
+                    <Paper >
                         <img className={classes.headImage} src="../static/img/shopping.png" alt="Generic placeholder image" />
+                        <h3>Increase Your Sites Traction By Placing Your Products On Other Complementary Ecommerce Sites</h3>
                         <p>
-                            Easily find an Ecommerce site to cross post products with in order to increase product visibility and expand your stores content.
-                </p>
+                            Setup product-sharing with Ecommerce sites that have complementary products to your own and increase your stores visibility and variety. Avoid the 
+                            competition that multi-vendor marketplaces bring and create visibility that places your product in the right light.
+                        </p>
+                       
                     </Paper>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12}>
                     <Paper >
                         <h3>Network with other Ecommerce founders and ecommerce professionals</h3>
-                    </Paper>
-                </Grid>
-                <Grid item xs={3}>
-                    <Paper >
-                        <h3>Network with other Ecommerce founders and ecommerce professionals</h3>
+                        <p>Connect your site to EcommShare through our extensions and be setup with other ecommerce entrepreneurs similar to yourself who are looking for collaboration </p>
                     </Paper>
                 </Grid>
 

@@ -21,19 +21,19 @@ const useStyles = makeStyles(theme => ({
 const footers = [
     {
         title: 'Company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
+        description: ['About', 'Contact us'],
     },
     {
         title: 'Features',
-        description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
+        description: ['Product Sharing', 'Collaboration', 'Website Platform Integration', 'Share Tips about Website Development'],
     },
     {
         title: 'Resources',
-        description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+        description: ['Shopify Integration', 'Magento Integration', 'WooCommerce Integration', 'Non-Platform Site'],
     },
     {
         title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
+        description: [],
     },
 ];
 

@@ -133,16 +133,16 @@ var useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyle
 });
 var footers = [{
   title: 'Company',
-  description: ['Team', 'History', 'Contact us', 'Locations']
+  description: ['About', 'Contact us']
 }, {
   title: 'Features',
-  description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one']
+  description: ['Product Sharing', 'Collaboration', 'Website Platform Integration', 'Share Tips about Website Development']
 }, {
   title: 'Resources',
-  description: ['Resource', 'Resource name', 'Another resource', 'Final resource']
+  description: ['Shopify Integration', 'Magento Integration', 'WooCommerce Integration', 'Non-Platform Site']
 }, {
   title: 'Legal',
-  description: ['Privacy policy', 'Terms of use']
+  description: []
 }];
 
 var Footer = function Footer() {
@@ -346,14 +346,21 @@ var Navbar = function Navbar(_ref) {
       lineNumber: 28
     },
     __self: this
-  }, "About"))), user && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, "About"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }), user && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "nav-item nav-link",
     "aria-controls": "simple-menu",
     "aria-haspopup": "true",
     onClick: handleClick,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }, "Profile"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_Menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -364,70 +371,70 @@ var Navbar = function Navbar(_ref) {
     onClose: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_4___default.a, {
     onClick: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "/profile",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, "Profile")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_4___default.a, {
     onClick: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, "Payment"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_4___default.a, {
     onClick: handleClose,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/logout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "nav-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 46
     },
     __self: this
   }, "Log Out"))))), !user && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "nav-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 55
     },
     __self: this
   }, "Log In"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
     className: "form-inline my-2 my-lg-0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -436,7 +443,7 @@ var Navbar = function Navbar(_ref) {
     placeholder: "Search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 61
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -444,7 +451,7 @@ var Navbar = function Navbar(_ref) {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 62
     },
     __self: this
   }, "Search"))));
