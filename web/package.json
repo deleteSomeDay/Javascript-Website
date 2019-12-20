@@ -44,6 +44,7 @@
     "react-filepond": "^7.0.1",
     "reactstrap": "^8.2.0",
     "serialize-javascript": "^2.1.2",
+    "set-value": "^3.0.1",
     "styled-components": "^4.4.1",
     "uid-safe": "^2.1.5",
     "validator": "^11.1.0"
